@@ -141,10 +141,22 @@
   align-self: flex-end;
 }
 
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .incoming-message img {
   width: 30px;
   border-radius: 15px;
   margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 4px;
+
+  animation: spin 1s linear infinite;
 }
 
 .message .message__bubble {
